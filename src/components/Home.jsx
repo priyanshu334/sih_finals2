@@ -5,30 +5,19 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFire, faBell } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 
 library.add(faFire, faBell);
 
 const Home = () => {
   return (
+    <>
+    <Navbar/>
     <div className="min-h-screen bg-gray-100 flex flex-col">
 
       {/* Profile Section */}
-      <div className="flex items-center justify-between p-4">
-        <Link to='/profile'>
-        <div>
-          <img
-            src="path_to_profile_image.jpg"
-            alt="Profile"
-            className="w-10 h-10 rounded-full"
-          />
-        </div>
-        </Link>
-        <div>
-          <FontAwesomeIcon icon="fire" className="text-red-500" /> {/* Fire Icon */}
-          <FontAwesomeIcon icon="bell" className="ml-4" /> {/* Notifications Icon */}
-        </div>
-      </div>
+
 
       {/* Mood Section */}
       <div className="p-4">
@@ -87,6 +76,7 @@ const Home = () => {
 </div>
 
     </div>
+    </>
   );
 };
 

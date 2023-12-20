@@ -2,14 +2,18 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BgImage from '../img/BgImage.png';
 
 
 const Login = () => {
   return (
+    <>
+  <div class="relative">
+  <img src={BgImage} alt="Image" class="w-full h-auto rounded-lg"/>
+  <div class="absolute inset-0 bg-white bg-opacity-0 backdrop-filter backdrop-blur-sm rounded-lg flex flex-col justify-center items-center">
 
-    <div className="min-h-screen flex items-center justify-center bg-teal-500">
-      
-    <div className="max-w-md w-full bg-white p-6 rounded-lg shadow-md">
+    {/* card */}
+    <div className="max-w-md w-auto h-auto bg-white p-6 rounded-lg shadow-md ml-10 mr-10 bg-opacity-60">
         <h2 className="text-2xl font-semibold mb-6">Login</h2>
         
         <form>
@@ -45,8 +49,6 @@ const Login = () => {
             >
               Sign In
             </button>
-
-            
             </Link>
           </div>
         </form>
@@ -67,6 +69,8 @@ const Login = () => {
         </div>
       </div>
     </div>
+    </div>
+    </>
   );
 };
 
