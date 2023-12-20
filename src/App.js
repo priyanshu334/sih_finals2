@@ -18,6 +18,7 @@ import MusicTherapySection from './components/Mindfullness/Musictherephy'
 import ExerciseSection from './components/Mindfullness/Excercise'
 import Calmness from './components/Mindfullness/Clamness'
 import Brainwaves from './components/Mindfullness/BrainWaves'
+import Profile from './components/Profile'
 
 const App = () => {
   return (
@@ -41,7 +42,8 @@ const App = () => {
      <Route path='/Excercies' element={<ExerciseSection/>}/>
      <Route path='/calmness' element={<Calmness/>}/>
      <Route path='/brainWaves' element={<Brainwaves/>}/>
-     
+     <Route path='/profile' element={<Profile/>}/>
+
 
 
 
