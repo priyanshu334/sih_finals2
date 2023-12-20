@@ -19,6 +19,7 @@ import ExerciseSection from './components/Mindfullness/Excercise'
 import Calmness from './components/Mindfullness/Clamness'
 import Brainwaves from './components/Mindfullness/BrainWaves'
 import Profile from './components/Profile'
+import Signup from './components/Signup'
 
 const App = () => {
   return (
@@ -43,6 +44,7 @@ const App = () => {
      <Route path='/calmness' element={<Calmness/>}/>
      <Route path='/brainWaves' element={<Brainwaves/>}/>
      <Route path='/profile' element={<Profile/>}/>
+     <Route path='/signup' element={<Signup/>}/>
 
 
 

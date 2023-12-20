@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import BgImage from '../img/BgImage.png';
 
 
-const Login = () => {
+const Signup = () => {
   return (
     <>
   <div class="relative">
@@ -14,7 +14,9 @@ const Login = () => {
 
     {/* card */}
     <div className="max-w-md w-auto h-auto bg-white p-6 rounded-lg shadow-md ml-10 mr-10 bg-opacity-60">
-        <h2 className="text-2xl font-semibold mb-6">Login</h2>
+        <h2 className=' text-center font-bold'>Hello </h2>
+        <h2 className='text-center'>Welcome to the app</h2>
+        <h2 className="text-2xl  mt-6 text-center font-semibold mb-6">Sign Up</h2>
         
         <form>
           <div className="mb-4">
@@ -47,11 +49,8 @@ const Login = () => {
               type="submit"
               className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600"
             >
-              Sign In
+              Sign Up
             </button>
-            </Link>
-            <Link to='/Signup'>
-            <h1 className='text-center my-4 hover:font-bold hover:cursor-pointer '>Or new to the app Sign Up ?</h1>
             </Link>
           </div>
         </form>
@@ -64,10 +63,10 @@ const Login = () => {
 
         <div className="mt-6">
           <button className="w-full bg-red-500 text-white py-2 rounded-md hover:bg-red-600">
-            Sign In with Google
+            Sign up with Google
           </button>
           <button className="mt-4 w-full bg-blue-400 text-white py-2 rounded-md hover:bg-blue-500">
-            Sign In with Twitter
+            Sign up with Twitter
           </button>
         </div>
       </div>
@@ -77,4 +76,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;
