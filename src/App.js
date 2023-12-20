@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Login from './components/Login'
 import { Route, Routes } from 'react-router-dom'
 import Question from './components/Questions'
@@ -20,8 +20,15 @@ import Calmness from './components/Mindfullness/Clamness'
 import Brainwaves from './components/Mindfullness/BrainWaves'
 import Profile from './components/Profile'
 import Signup from './components/Signup'
+import { auth } from './Firebase'
 
 const App = () => {
+  const [userName , setUserName]=useState("")
+useEffect =(()=>{
+  auth.onAuthStateChanged((user)=>{
+    console.log(user);
+  })
+},[]);
   return (
     <>
     <Routes>
