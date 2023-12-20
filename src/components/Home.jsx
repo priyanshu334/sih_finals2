@@ -5,6 +5,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFire, faBell } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
+import BottomBar from './BottomBar';
 
 library.add(faFire, faBell);
 
@@ -63,20 +64,24 @@ const Home = () => {
     </div>
   </div>
   </Link>
+  <Link to='/resources' >
   <div className="bg-cover bg-center h-24 md:h-32 rounded-md" style={{ backgroundImage: 'url("path_to_image.jpg")' }}>
         <div className="bg-black bg-opacity-50 p-2 md:p-4 rounded-md">
           <h3 className="text-lg font-semibold text-white mb-1 md:mb-2">Resources</h3>
           <p className="text-sm text-white">Check out helpful resources.</p>
         </div>
       </div>
+      </Link>
 
       {/* Card 2 */}
+      <Link to='/mindfullness'>
       <div className="bg-cover bg-center h-24 md:h-32 rounded-md" style={{ backgroundImage: 'url("path_to_image.jpg")' }}>
         <div className="bg-black bg-opacity-50 p-2 md:p-4 rounded-md">
           <h3 className="text-lg font-semibold text-white mb-1 md:mb-2">Mindfulness</h3>
           <p className="text-sm text-white">Practice mindfulness for a peaceful mind.</p>
         </div>
       </div>
+      </Link>
 </div>
 
     </div>
